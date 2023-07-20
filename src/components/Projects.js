@@ -9,20 +9,22 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
+  const urlInstagram = "https://www.instagram.com/httpsluucas/";
+
   const projects = [
     {
-      title: "Business Startup",
-      description: "Projeto barbearia papapapappapa",
+      title: "Barber Shop",
+      description: "This project consists in to render a site linkavel for sociais midias from barbar shop.",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Scheduling Appointments",
+      description: "This project consists in render to schedule booking for a beauty salon. Were using dataBase from prisma and mongodbServer.",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Pokemon",
+      description: "This was my first project utilizing a serverless provider. In future, i pretend to change this aplication for other API.",
       imgUrl: projImg3,
     },
     // {
@@ -70,10 +72,9 @@ export const Projects = () => {
                         {
                           projects.map((project, index) => {
                             return (
-                              <ProjectCard
+                              <ProjectCard 
                                 key={index}
-                                {...project}
-                                />
+                                {...project} />
                             )
                           })
                         }
