@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![image](https://github.com/Shystra/personal-portfolio/assets/124002796/ba68ced8-f871-4b89-8474-9cb6da3cdf4c)
+![image](https://github.com/Shystra/my_Portfolio/assets/124002796/e09d45f7-d703-4aba-bd35-78cb38cf521c)
+
 
 
 Built using:
