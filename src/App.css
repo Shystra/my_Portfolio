@@ -230,6 +230,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+.vvd {
+  border-radius: 15px;
+}
+.vvd::before{
+  border-radius: 15px;
+
+}
+
+
 
 /************ Banner Css ************/
 .banner {
@@ -240,9 +249,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.vvd{
-  border-radius: 15px;
-}
+
+
+
 .banner .tagline {
   font-weight: 700;
   border-radius: 15px;
@@ -269,24 +278,67 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
+
+
 .banner button {
-  color: #fff;
+  /* color: #fff;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
   letter-spacing: 0.8px;
   display: flex;
-  align-items: center;
+  align-items: center; */
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 15px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  
 }
+
+.banner button:hover{
+  color: #fff;
+  background-color: #000; 
+  border: 1px solid #fff;
+  
+}
+
+/* .banner button::before{
+  content: "";
+  
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+} */
+.banner button:hover::before{
+  /* color: #fff; */
+  width: 100%;
+  
+}
+
+
 .banner button svg {
+  
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
 .banner button:hover svg {
+  
   margin-left: 25px;
 }
+
 .banner img {
   animation: updown 3s linear infinite;
 }

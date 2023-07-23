@@ -5,6 +5,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -13,6 +14,20 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "Developer", "I.T Analyst", ];
   const period = 2000;
+
+
+ 
+
+  const redirecionarParaCurriculo = () => {
+    // Coloque o link do seu currículo aqui
+    const curriculoLink = 'https://drive.google.com/drive/folders/1uJeH4GF5pbeKZzHcHM7oNagBSopGfP3d';
+    window.location.href = curriculoLink;
+  };
+
+
+
+
+  // const cV = 'https://drive.google.com/drive/folders/1uJeH4GF5pbeKZzHcHM7oNagBSopGfP3d'
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -66,8 +81,11 @@ export const Banner = () => {
                       where I create solutions that enhance team efficiency and productivity. Additionally, 
                       I provide technical support to users, ensuring that the 
                       implemented solutions are utilized effectively.</p>
-                      
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                   
+                   
+                  <button className='button_cv' onClick={redirecionarParaCurriculo}>Resume <ArrowRightCircle size={25} /></button>
+                 
+                  {/* <button className="vvd"><span>Let’s Connect</span></button> */}
               </div>}
             </TrackVisibility>
           </Col>
