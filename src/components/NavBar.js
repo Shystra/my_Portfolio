@@ -4,6 +4,9 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+// import {FaSquareGithub} from 'react-icons/fa';
+import {AiFillGithub, AiOutlineInstagram, AiOutlineLinkedin} from 'react-icons/ai';
+
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -12,7 +15,7 @@ import {
 export const NavBar = () => {
 
   const urlInstagram = "https://www.instagram.com/httpsluucas/";
-  const urlFacebook = 'https://www.facebook.com/joaolucas.pereira.121';
+  const urlGithub = 'https://github.com/Shystra';
   const linkDin = 'https://www.linkedin.com/in/jo%C3%A3o-lucas-souza-a94193229/';
 
   const [activeLink, setActiveLink] = useState('home');
@@ -54,9 +57,14 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href={linkDin}><img src={navIcon1} alt="" /></a>
-                <a href={urlFacebook}><img src={navIcon2} alt="" /></a>
-                <a href={urlInstagram}><img src={navIcon3} alt="" /></a>
+                {/* <a href={linkDin}><img src={navIcon1} alt="" /></a> */}
+                <a href={linkDin}><AiOutlineLinkedin /></a>
+                {/* <a href={urlGithub}><img src={navIcon2} alt="" /></a> */}
+                <a href={urlGithub}><AiFillGithub/></a>
+                
+
+                {/* <a href={urlInstagram}><img src={navIcon3} alt="" /></a> */}
+                <a href={urlInstagram}><AiOutlineInstagram/></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

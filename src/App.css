@@ -125,6 +125,8 @@ span.navbar-text {
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
+    margin-top: -20px;
+
     align-items: center;
     justify-content: center;
     line-height: 1;
@@ -138,12 +140,13 @@ span.navbar-text {
     background-color: #ffffff;
     border-radius: 50%;
     transform: scale(0);
-	transition: 0.3s ease-in-out;
+	  transition: 0.3s ease-in-out;
 }
 .social-icon a:hover::before {
     transform: scale(1);
 }
 .social-icon a img {
+  
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
@@ -151,6 +154,20 @@ span.navbar-text {
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+
+.social-icon svg {
+  
+  margin-top: 0.8rem;
+  color: #fff;
+  width: 40%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover svg {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+
 .navbar-text button {
   font-weight: 700;
   color: #fff;
@@ -630,7 +647,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .footer {
   
-  padding: 0 0 50px 0;
+  padding: 30px 0 50px 0;
   /* background-image: radial-gradient(circle at 120.71% 50%, #342f3b 0, #211c33 25%, #08032b 50%, #000025 75%, #000020 100%); */
   background-image: radial-gradient(circle at 120.71% 50%, #2a2f23 0, #1b1b1b 25%, #030014 50%, #00000b 75%, #000001 100%);
   /* background-image: url('./assets/img/footer-bg.png');
@@ -702,7 +719,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
   
   justify-content: center;
-  padding-top: 1rem;
+  padding-top: 0rem;
   
   width: 15%;
 }
