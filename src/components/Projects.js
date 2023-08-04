@@ -5,6 +5,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from '../assets/img/project-img4.png';
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg5 from '../assets/img/Captura de tela 2023-08-04 203919.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -33,6 +34,14 @@ export const Projects = () => {
       description: "This project to render just tasks for users. You can to change, delete and to add",
       imgUrl: projImg4,
     },
+
+    {
+      title: "Pomodoro",
+      description: "This project to render Pomodoro method",
+      imgUrl: projImg5,
+    },
+
+
     // {
     //   title: "Business Startup",
     //   description: "Design & Development",

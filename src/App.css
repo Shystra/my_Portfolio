@@ -520,7 +520,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
   
   background-image: linear-gradient(270deg, #4b2f53 0, #3d224e 16.67%, #2c154a 33.33%, #130945 50%, #000041 66.67%, #00003e 83.33%, #00003b 100%);
   opacity: 0.85;
