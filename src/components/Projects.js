@@ -15,48 +15,47 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Barber Shop",
-      description: "This project consists in to render a site linkavel for sociais midias from barbar shop.",
-      imgUrl: projImg1,
+      title: "Pomodoro",
+      description: "This project to render Pomodoro method. ",
+      imgUrl: projImg5,
+      urls: [
+        "https://pomodoro-eight-delta.vercel.app/"
+      ]
     },
     {
-      title: "Scheduling Appointments",
-      description: "This project consists in render to schedule booking for a beauty salon. Were using dataBase from prisma and mongodbServer.",
-      imgUrl: projImg2,
+      title: "Barber Shop",
+      description: "This project consists in to render a site linkavel for sociais midias from barbar shop. ",
+      imgUrl: projImg1,
+      urls: [
+        "https://felipao-barbearia.vercel.app/"
+      ]
     },
     {
       title: "Pokemon",
-      description: "This was my first project utilizing a serverless provider. In future, i pretend to change this aplication for other API.",
+      description: "This was my first project utilizing a serverless provider. In future, i pretend to change this aplication for other API. ",
       imgUrl: projImg3,
+      urls: [
+        "https://project-pokemon-bay.vercel.app/"
+      ]
     },
     {
       title: "Tasks",
-      description: "This project to render just tasks for users. You can to change, delete and to add",
+      description: "This project to render just tasks for users. You can to change, delete and to add. ",
       imgUrl: projImg4,
+      urls: [
+        "https://notes-seven-omega.vercel.app/"
+      ]
     },
-
+    
+    
     {
-      title: "Pomodoro",
-      description: "This project to render Pomodoro method",
-      imgUrl: projImg5,
+      title: "Scheduling Appointments",
+      description: "This project consists in render to schedule booking for a beauty salon. Were using dataBase from prisma and mongodbServer. ",
+      imgUrl: projImg2,
+      urls: [
+        "https://hero-node.vercel.app/"
+      ]
     },
-
-
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
   ];
 
   return (
@@ -73,13 +72,8 @@ export const Projects = () => {
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     {/* <Nav.Item>
                       <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
                     </Nav.Item> */}
+                   
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
@@ -87,20 +81,16 @@ export const Projects = () => {
                         {
                           projects.map((project, index) => {
                             return (
-                              <ProjectCard 
+                              <ProjectCard
                                 key={index}
-                                {...project} />
+                                {...project}
+                              />
                             )
                           })
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
+                    
                   </Tab.Content>
                 </Tab.Container>
               </div>}
@@ -108,7 +98,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="Background"></img>
     </section>
   )
 }
