@@ -31,7 +31,7 @@ export const Projects = () => {
     },
 
     {
-      title: "Tasks",
+      title: "Intersept Form",
       description: "Made by me. This project render a form to clients in ReactDOM. Soon after capturaing the data and sends an email to the company containing all the informations",
       imgUrl: projImg8,
       urls: [
@@ -40,7 +40,7 @@ export const Projects = () => {
     },
 
     {
-      title: "Tasks",
+      title: "Pokemon API",
       description: "This project to render a Pokedex-API creating in Angular.",
       imgUrl: projImg9,
       urls: [
